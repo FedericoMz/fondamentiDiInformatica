@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src = "index.js"> </script>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="shortcut icon" type="image/jpg" href="dadi.jpg"/>
+			<title>Dadi!</title>
+	</head>
+	
+	<body>
+		<center><h1><img class="fit-picture" src="titolo.png" /></h1></center>
+		
+		
+		<center> Questo sito contiene attività legate al gioco d'azzardo. <br> La visione di tali contenuti è riservata agli utenti maggiorenni.</center>
+		<br>
+		<center>
+		<input type = "button"
+			id = "Anni"
+			value = "Ho almeno 18 anni">
+		</center>			
+		<br>	
+		<center>
+		<span id="MessaggioAnni"></span>
+		</center>
+		<br>
+		<div id="StopAnni">
+			<center>Allora ti diamo il benvenuto! Qui puoi sfidare <b>Damiano Dadone</b>, Campione dei Dadi a livello mondiale! <br> 
+			Decidi quanto puntare e lancia i dadi. Se il tuo risultato è inferiore a quello di Damiano, lui si intascherà i soldi. <br>
+			Ma, se vinci, Damiano perderà <b> il doppio della somma. </b> Se Damiano va in bancarotta <b>diventerai Campione dei Dadi!</b></center>			
+			<br>
+			<center>
+			Attento però: potresti essere <i>tu</i> a finire in bancarotta...
+			<br>
+
+			</center>
+			<table style="width: 100%;">
+				<tr>
+					<td>
+						<td id="giocatoreTab" class="alignLeft">
+							<h2>Tu</h2>	
+							<input type = "text"
+								id = "SoldiG"
+								value= "10000€"
+								readonly = "readonly">
+							<br>
+							<br>		
+							<input type = "text"
+								id = "Dado1G"
+								placeholder= "Dado Rosso"
+								readonly = "readonly">
+							<input type = "text"
+								id = "Dado2G"
+								placeholder= "Dado Blu"
+								readonly = "readonly">
+							<br>
+							<br>			
+							<input type = "text"
+								id = "TotG"
+								placeholder= "Punteggio totale"
+								readonly = "readonly">
+						</td>
+						<td id="scommessaTab" class="alignCenter">
+							<h2>La Scommessa</h2>
+							<input type = "text"
+								id = "scommessa"
+								placeholder= "Quanti euro punti?">
+							<br>
+							<br>			
+							<input type = "button"
+								id = "Lancia"
+								value = "Tenta la fortuna!">
+							<br>
+							<br>
+							<span id="MessaggioScommessa"></span>				
+						</td>
+						<td id = "avversarioTab" class="alignRight" >
+							<h2 id="avversario">Mr. Dadone</h2>
+								<input type = "text"
+									id = "SoldiA"
+									value= "15000€"
+									readonly = "readonly">			
+								<br>
+								<br>
+								<input type = "text"
+									id = "Dado1A"
+									placeholder= "Dado Rosso"
+									readonly = "readonly">
+								<input type = "text"
+									id = "Dado2A"
+									placeholder= "Dado Blu"
+									readonly = "readonly">
+								<br>
+								<br>			
+								<input type = "text"
+									id = "TotA"
+									placeholder= "Punteggio totale"
+									readonly = "readonly">
+						</td>
+					</tr>
+			</table>	
+			<br>
+			<br>
+			<center><b>Bonus Dadi: Promozione Natalizia!</b><br>
+				La Direzione garantisce ai giocatori un Bonus Dadi pari al 25% della somma scommessa, <br> se i valori del dado rosso e del dado blu sono superiori ai valori del dado rosso e del dado blu dell'avversario.</center>
+			<br>
+			<br>
+			<footer>
+				<p>Progetto di Federico Mazzoni. Logo: <a href="https://www.nicepng.com/ourpic/u2w7q8y3w7o0q8i1_blue-and-red-dice-logo-2-by-andrew/">Immagine</a> · <a href="https://www.dafont.com/angelika-playfull.font">Font</a>. Grazie al signor Damiano Dadone per aver permesso l'utilizzo del suo nome.
+			</footer>	
+		</div>
+	</body>
+</html>
